@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Platter</title>
+    <link rel="icon" type="image/png" href="./assets/mobile-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-sora {
+        font-family: 'Sora', serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'agriculture-primary-color': '#179800'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-sora">
+    <header class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class="hidden lg:flex"
+            ><img src="./assets/logo-header.png" alt="agriculture logo"
+          /></a>
+          <a class="lg:hidden"
+            ><img src="./assets/mobile-logo.png" alt="agriculture logo"
+          /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[#111] text-base">
+            <li class="hover:scale-125 ease-in duration-300">
+              <a class="hover:bg-transparent hover:text-inherit">Product</a>
+            </li>
+            <li class="hover:scale-125 ease-in duration-300">
+              <a class="hover:bg-transparent hover:text-inherit">Services </a>
+            </li>
+
+            <li class="hover:scale-125 ease-in duration-300">
+              <a class="hover:bg-transparent hover:text-inherit">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-2">
+          <img
+            class="hover:scale-110 hover:cursor-pointer"
+            src="./assets/search.png"
+            alt="search icon"
+          />
+          <img
+            class="hover:scale-110 hover:cursor-pointer"
+            src="./assets/cart.png"
+            alt="cart icon"
+          />
+          <a
+            class="btn min-h-10 h-10 bg-white text-[#111] hover:bg-white hover:scale-110 border-agriculture-primary-color hover:border-agriculture-primary-color"
+            >Login</a
+          >
+          <a
+            class="btn min-h-10 h-10 bg-agriculture-primary-color text-white hover:bg-agriculture-primary-color hover:scale-110"
+            >Register</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="hero h-[750px] bg-[url('./images/banner.png')] bg-center bg-cover bg-no-repeat rounded-2xl overflow-hidden"
+      >
+        <div class="hero-overlay bg-opacity-0"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="py-20 px-40">
+            <h1 class="mb-5 text-8xl font-bold font-garamond text-white">
+              We Provide Effective Legal Solution
+            </h1>
+            <p class="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto"></main>
+    <footer></footer>
+  </body>
+</html>
